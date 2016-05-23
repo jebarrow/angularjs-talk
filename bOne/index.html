@@ -6,7 +6,7 @@
     <title>angular talk one</title>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.20/angular.min.js"></script>
 </head>
-<body ng-app="">
+<body ng-app="" ng-init="first = 0; second = 0;">
   	<label>First Number:</label>&nbsp;<input type="number" ng-model="first" /><br>
     <label>Second Number:</label>&nbsp;<input type="number" ng-model="second" /><br>
     <label for="sum">{{first + '+' + second + '=' }}</label>&nbsp;<span>{{first + second}}</span>

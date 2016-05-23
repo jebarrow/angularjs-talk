@@ -8,7 +8,7 @@
         $routeProvider.when('/list',
         {
             templateUrl: function () {
-                return '/final/app/view/todo.html';
+                return '/xfinal/app/view/todo.html';
             },
         })
         .otherwise({
