@@ -1,0 +1,9 @@
+﻿<div data-ng-controller="todoListController as vm">
+    <h2>todo list</h2>
+    <div ng-repeat="todo in vm.todoList">
+        <a href="" data-ng-click="vm.current = $index; vm.showTodo(todo.id); " ng-class="{current: vm.current ==  $index}" ng-bind="todo.title" ></a> &nbsp;
+        <a class="delete" href="" data-ng-click="vm.delete(todo.id)"><i>delete</i></a>
+    </div>
+    <!--<a href="" data-ng-click="vm.addTodo()"> add a todo </a>-->
+
+</div>
