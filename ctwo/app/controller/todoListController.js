@@ -5,8 +5,8 @@
         .module('app')
         .controller('todoListController', todoListController);
 
-    todoListController.$inject = ['$http', '$scope'];
-    function todoListController($http, $scope) {
+    todoListController.$inject = ['$http'];
+    function todoListController($http) {
         var vm = this;
         vm.todoList = [];
         vm.delete = del;

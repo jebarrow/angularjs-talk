@@ -5,8 +5,8 @@
         .module('app')
         .controller('todoEditController', todoEditController);
 
-    todoEditController.$inject = ['$http', '$scope'];
-    function todoEditController($http, $scope) {
+    todoEditController.$inject = ['$http'];
+    function todoEditController($http) {
         var vm = this;
         vm.todo = { id: newId };
         vm.master = vm.todo;
